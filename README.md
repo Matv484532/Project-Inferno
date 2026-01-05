@@ -1,7 +1,7 @@
 # My Brand New Project : Project Inferno
 
-### Hi, you probably not know me, mainly because I am a new developper(compared to others at least) so i'm going to present my self to you.
-### My name is Matv484532, i'm a 14 year old boy and i am proud of showing you my brand new project: 
+Hi, you probably do not know me, mainly because I am a new developper(compared to others at least) so i'm going to present my self to you.
+My name is Matv484532, i've been a developper for around a year and a half and i am proud to show you my brand new project: 
 ## Project Inferno
 
 # Inspirations :
