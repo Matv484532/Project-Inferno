@@ -2,12 +2,14 @@
 
 Hi, you probably do not know me, mainly because I am a new developper(compared to others at least) so i'm going to present my self to you.
 My name is Matv484532, i've been a developper for around a year and a half and i am proud to show you my brand new project: 
-## Project Inferno
+### Project Inferno
 
 # Inspirations :
 
-### This game, or at least, project is massively inspired from the absolute goat of singleplayer First Person Shooters : 
+This game, or at least, project is massively inspired from the absolute goat of singleplayer First Person Shooters : 
+
 ## Ultrakill
+
 You can buy it on steam for around 25$, or at least at the moment i write this because it is still in early access.
 If you want to try the game, you can search it up on steam or [let me redirect you directly to the page with this link](https://store.steampowered.com/app/1229490/ULTRAKILL/).
 If you can't afford it, Hakita being the absolute goat that he is said that :
