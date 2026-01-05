@@ -1,0 +1,20 @@
+# Project place file
+/Bababoey.rbxlx
+
+# Roblox Studio lock files
+/*.rbxlx.lock
+/*.rbxl.lock
+
+sourcemap.json
+
+# Project place file
+/Tutorial.rbxlx
+
+# Roblox Studio lock files
+/*.rbxlx.lock
+/*.rbxl.lock
+Packages/
+ServerPackages/
+
+sourcemap.json
+wally.lock

@@ -1,0 +1,46 @@
+{
+  "name": "Project Inferno",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedFirst": {
+      "$className":"ReplicatedFirst",
+      "$path":"src/ReplicatedFirst",
+      "$ignoreUnknownInstances": true
+    },
+
+    "ReplicatedStorage": {
+      "$className":"ReplicatedStorage",
+      "$path":"src/ReplicatedStorage",
+      "$ignoreUnknownInstances": true,
+      "Packages": {
+        "$path":"Packages",
+        "$ignoreUnknownInstances": true
+      }
+    },
+
+    "ServerScriptService": {
+      "$className":"ServerScriptService",
+      "$path": "src/ServerScriptService",
+      "$ignoreUnknownInstances": true,
+      "ServerPackages": {
+        "$path":"ServerPackages",
+        "$ignoreUnknownInstances": true
+      }
+    },
+
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "$path": "src/StarterPlayer/StarterPlayerScripts",
+        "$ignoreUnknownInstances": true
+      },
+      "StarterCharacterScripts": {
+        "$className": "StarterCharacterScripts",
+        "$path": "src/StarterPlayer/StarterCharacterScripts",
+        "$ignoreUnknownInstances": true
+      }
+    }
+  }
+}
