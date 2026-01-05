@@ -30,21 +30,23 @@ I used Microsoft VS Code because i heard that the big studios are using it (Yes 
 
 To do all that, i used 
 ## [Rokit](https://github.com/rojo-rbx/rokit)
-to be able to activate 
+to be able to activate a plugin called
 ## [Rojo](https://marketplace.visualstudio.com/items?itemName=evaera.vscode-rojo) 
-to set up the base, modifying it a bit, using 
+mainly used to set up the base, modifying it a bit and i also used
 ### [Selene](https://marketplace.visualstudio.com/items?itemName=Kampfkarren.selene-vscode), [Luau Language Server](https://marketplace.visualstudio.com/items?itemName=JohnnyMorganz.luau-lsp) and [StyLua](https://marketplace.visualstudio.com/items?itemName=JohnnyMorganz.luau-lsp) 
-to make it easier to write, and 
+to make the code cleaner to read and easier to write and finally,
 ## [Wally](https://wally.run/) 
-to add packages to help make my work easier or faster.
+to add packages to help make my work easier and/or faster.
 
 
-I also wanted to use VS Code because we can use a program called
+
+
+I also wanted to use VS Code because I wanted to use a program called
 ## [Git](https://git-scm.com/)
-It works by installing it and then allowing you via VS Code to create a new repository and allowing for version control and easier tracking of the work as well as creating alternate branches of the project in which poeple can create the things they want and then ask to attach it to the main branch for it to be added in the game.
+It works by installing it and then allowing you via VS Code to create a new repository. It also allows for version control and makes tracking the work easier. It also allows to create alternate branches of the project in which people can do their own creations or modifications and they can then ask to attach it to the main branch for it to be added in the game.
 
-As you might have gessed, git is connected to what you are using right now to read this:
+As you might have gessed, Git is connected to what you are using right now to read this:
 ## [Github](https://github.com/)
 Github is a hosting website used by many businesses to be able to keep track of the code easily and allowing branch control.
 
-I think I talked about pretty much everything I wanted to say, so if you are still here and reading this, thank you for your time and play Project Inferno on roblox when it comes out I guess.
+I think I talked about pretty much everything I wanted to say, so if you are still here and reading this, thank you for your time and play Project Inferno on [Roblox](www.roblox.com) when it comes out I guess.
