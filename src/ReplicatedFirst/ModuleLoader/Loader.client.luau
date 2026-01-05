@@ -1,2 +1,2 @@
-local Loader = require(game.ReplicatedStorage:WaitForChild("ModuleLoader").Loader)
+local Loader = require(game:GetService("ReplicatedStorage"):WaitForChild("ModuleLoader").Loader)
 Loader.LoadAll()
