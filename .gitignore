@@ -7,12 +7,6 @@
 
 sourcemap.json
 
-# Project place file
-/Tutorial.rbxlx
-
-# Roblox Studio lock files
-/*.rbxlx.lock
-/*.rbxl.lock
 Packages/
 ServerPackages/
 
