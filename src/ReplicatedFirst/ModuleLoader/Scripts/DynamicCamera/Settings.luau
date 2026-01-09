@@ -8,7 +8,7 @@ return {
 	BaseNumLerp = 0.25, -- lerp time value
 
 	--sway settings
-	SwayStrenght = 0.2, -- effect strenght
+	SwayStrenght = 0.025, -- effect strenght
 	BaseSway = 1, -- axis strenght
 	SetSway = 0.5, -- axis multiplier
 	CustomSwayZVal = -10, -- vector z value

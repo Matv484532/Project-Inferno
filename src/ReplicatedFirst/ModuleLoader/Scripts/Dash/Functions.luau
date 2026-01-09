@@ -31,6 +31,40 @@ local UnavailableColor = Color3.fromRGB(155, 23, 0)
 
 -- === Functions === --
 
+local function SetGravityEnabled(enabled)
+	local primaryPart = char.PrimaryPart
+	local forceName = "AntiGravityForce"
+
+	-- Destroy an existing force if it is still created
+	local existing = primaryPart:FindFirstChild(forceName)
+	if existing then
+		existing:Destroy()
+	end
+
+	if not enabled then
+		-- Calculate the mass of the player's character
+		local totalMass = 0
+		for _, part in ipairs(char:GetDescendants()) do
+			if part:IsA("BasePart") then
+				totalMass += part:GetMass()
+			end
+		end
+
+		-- 2. Create the Force
+		local attachment = Instance.new("Attachment")
+		attachment.Parent = primaryPart
+		local vf = Instance.new("VectorForce")
+		vf.Parent = primaryPart
+
+		vf.Name = forceName
+		vf.Attachment0 = attachment
+		vf.RelativeTo = Enum.ActuatorRelativeTo.World
+
+		-- Create a force to cancel out the gravity
+		vf.Force = Vector3.new(0, totalMass * workspace.Gravity, 0)
+	end
+end
+
 function module.Dash()
 	if debounce then
 		return
@@ -46,8 +80,15 @@ function module.Dash()
 	end
 
 	debounce = true
+	if humanoid.FloorMaterial == Enum.Material.Air then
+		velocity = 20000
+	elseif humanoid.FloorMaterial ~= Enum.Material.Air then
+		velocity = 30000
+	else
+		return warn("Unknown humanoid floor material state, canceled dash")
+	end
 
-	velocity = 30000
+	SetGravityEnabled(false)
 
 	if char then
 		local hrp = char:FindFirstChild("HumanoidRootPart")
@@ -65,6 +106,8 @@ function module.Dash()
 		else
 			dashDir = hrp.Position + Vector3.new(MoveDirection.X, 0, MoveDirection.Z)
 		end
+
+		humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping, false)
 
 		UI:FindFirstChild("Bar" .. math.floor(charge.Value)).BackgroundColor3 = UnavailableColor
 
@@ -90,10 +133,13 @@ function module.Dash()
 		task.wait(duration)
 
 		humanoid.AutoRotate = true
+		humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping, true)
 
 		vectorForce:Destroy()
 		bodyGyro:Destroy()
 		Att:Destroy()
+		task.wait(0.05)
+		SetGravityEnabled(true)
 		animTrack:Stop()
 	end
 	velocity = 20000
